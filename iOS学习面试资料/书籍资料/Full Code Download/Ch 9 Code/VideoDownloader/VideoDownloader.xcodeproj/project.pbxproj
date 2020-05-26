@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA6F425B15307FFA00E98B14 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F425815307F6600E98B14 /* VideoCell.m */; };
+		FA6F425C1530808C00E98B14 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6F425915307F6600E98B14 /* VideoCell.xib */; };
+		FA6F42641530A97200E98B14 /* AsyncDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F42631530A97200E98B14 /* AsyncDownloader.m */; };
+		FA6F42701530B5EC00E98B14 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6F426F1530B5EC00E98B14 /* MediaPlayer.framework */; };
+		FA6F42731530E17000E98B14 /* DownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F42721530E17000E98B14 /* DownloadProgressView.m */; };
+		FAB6A84A152E560F00BEAA42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB6A849152E560F00BEAA42 /* UIKit.framework */; };
+		FAB6A84C152E560F00BEAA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB6A84B152E560F00BEAA42 /* Foundation.framework */; };
+		FAB6A84E152E560F00BEAA42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB6A84D152E560F00BEAA42 /* CoreGraphics.framework */; };
+		FAB6A854152E560F00BEAA42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB6A852152E560F00BEAA42 /* InfoPlist.strings */; };
+		FAB6A856152E560F00BEAA42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6A855152E560F00BEAA42 /* main.m */; };
+		FAB6A85A152E560F00BEAA42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6A859152E560F00BEAA42 /* AppDelegate.m */; };
+		FAB6A85D152E560F00BEAA42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6A85C152E560F00BEAA42 /* ViewController.m */; };
+		FAB6A860152E560F00BEAA42 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB6A85E152E560F00BEAA42 /* ViewController.xib */; };
+		FAB6A868152E5B6800BEAA42 /* FeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6A867152E5B6800BEAA42 /* FeedLoader.m */; };
+		FAB6A86B152E5DCD00BEAA42 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6A86A152E5CDE00BEAA42 /* XMLReader.m */; };
+		FADC81CA1606788F00F7DCBD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADC81C91606788F00F7DCBD /* Icon@2x.png */; };
+		FADC81CD1606789800F7DCBD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FADC81CC1606789800F7DCBD /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA6F425715307F6600E98B14 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		FA6F425815307F6600E98B14 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		FA6F425915307F6600E98B14 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		FA6F42621530A97200E98B14 /* AsyncDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncDownloader.h; sourceTree = "<group>"; };
+		FA6F42631530A97200E98B14 /* AsyncDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncDownloader.m; sourceTree = "<group>"; };
+		FA6F426F1530B5EC00E98B14 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FA6F42711530E17000E98B14 /* DownloadProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadProgressView.h; sourceTree = "<group>"; };
+		FA6F42721530E17000E98B14 /* DownloadProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressView.m; sourceTree = "<group>"; };
+		FAB6A845152E560F00BEAA42 /* VideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB6A849152E560F00BEAA42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAB6A84B152E560F00BEAA42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAB6A84D152E560F00BEAA42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAB6A851152E560F00BEAA42 /* VideoDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoDownloader-Info.plist"; sourceTree = "<group>"; };
+		FAB6A853152E560F00BEAA42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB6A855152E560F00BEAA42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB6A857152E560F00BEAA42 /* VideoDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		FAB6A858152E560F00BEAA42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAB6A859152E560F00BEAA42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAB6A85B152E560F00BEAA42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FAB6A85C152E560F00BEAA42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAB6A85F152E560F00BEAA42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FAB6A866152E5B6800BEAA42 /* FeedLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedLoader.h; sourceTree = "<group>"; };
+		FAB6A867152E5B6800BEAA42 /* FeedLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedLoader.m; sourceTree = "<group>"; };
+		FAB6A869152E5CDE00BEAA42 /* XMLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		FAB6A86A152E5CDE00BEAA42 /* XMLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		FADC81C91606788F00F7DCBD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FADC81CC1606789800F7DCBD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB6A842152E560F00BEAA42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6F42701530B5EC00E98B14 /* MediaPlayer.framework in Frameworks */,
+				FAB6A84A152E560F00BEAA42 /* UIKit.framework in Frameworks */,
+				FAB6A84C152E560F00BEAA42 /* Foundation.framework in Frameworks */,
+				FAB6A84E152E560F00BEAA42 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB6A83A152E560E00BEAA42 = {
+			isa = PBXGroup;
+			children = (
+				FADC81CC1606789800F7DCBD /* Icon.png */,
+				FADC81C91606788F00F7DCBD /* Icon@2x.png */,
+				FAB6A84F152E560F00BEAA42 /* VideoDownloader */,
+				FAB6A848152E560F00BEAA42 /* Frameworks */,
+				FAB6A846152E560F00BEAA42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB6A846152E560F00BEAA42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6A845152E560F00BEAA42 /* VideoDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB6A848152E560F00BEAA42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F426F1530B5EC00E98B14 /* MediaPlayer.framework */,
+				FAB6A849152E560F00BEAA42 /* UIKit.framework */,
+				FAB6A84B152E560F00BEAA42 /* Foundation.framework */,
+				FAB6A84D152E560F00BEAA42 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB6A84F152E560F00BEAA42 /* VideoDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6A858152E560F00BEAA42 /* AppDelegate.h */,
+				FAB6A859152E560F00BEAA42 /* AppDelegate.m */,
+				FA6F42621530A97200E98B14 /* AsyncDownloader.h */,
+				FA6F42631530A97200E98B14 /* AsyncDownloader.m */,
+				FA6F42711530E17000E98B14 /* DownloadProgressView.h */,
+				FA6F42721530E17000E98B14 /* DownloadProgressView.m */,
+				FAB6A866152E5B6800BEAA42 /* FeedLoader.h */,
+				FAB6A867152E5B6800BEAA42 /* FeedLoader.m */,
+				FAB6A85B152E560F00BEAA42 /* ViewController.h */,
+				FAB6A85C152E560F00BEAA42 /* ViewController.m */,
+				FAB6A85E152E560F00BEAA42 /* ViewController.xib */,
+				FAB6A869152E5CDE00BEAA42 /* XMLReader.h */,
+				FAB6A86A152E5CDE00BEAA42 /* XMLReader.m */,
+				FA6F425715307F6600E98B14 /* VideoCell.h */,
+				FA6F425815307F6600E98B14 /* VideoCell.m */,
+				FA6F425915307F6600E98B14 /* VideoCell.xib */,
+				FAB6A850152E560F00BEAA42 /* Supporting Files */,
+			);
+			path = VideoDownloader;
+			sourceTree = "<group>";
+		};
+		FAB6A850152E560F00BEAA42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6A851152E560F00BEAA42 /* VideoDownloader-Info.plist */,
+				FAB6A852152E560F00BEAA42 /* InfoPlist.strings */,
+				FAB6A855152E560F00BEAA42 /* main.m */,
+				FAB6A857152E560F00BEAA42 /* VideoDownloader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB6A844152E560F00BEAA42 /* VideoDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB6A863152E560F00BEAA42 /* Build configuration list for PBXNativeTarget "VideoDownloader" */;
+			buildPhases = (
+				FAB6A841152E560F00BEAA42 /* Sources */,
+				FAB6A842152E560F00BEAA42 /* Frameworks */,
+				FAB6A843152E560F00BEAA42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoDownloader;
+			productName = VideoDownloader;
+			productReference = FAB6A845152E560F00BEAA42 /* VideoDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB6A83C152E560E00BEAA42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FAB6A83F152E560E00BEAA42 /* Build configuration list for PBXProject "VideoDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB6A83A152E560E00BEAA42;
+			productRefGroup = FAB6A846152E560F00BEAA42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB6A844152E560F00BEAA42 /* VideoDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB6A843152E560F00BEAA42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB6A854152E560F00BEAA42 /* InfoPlist.strings in Resources */,
+				FAB6A860152E560F00BEAA42 /* ViewController.xib in Resources */,
+				FA6F425C1530808C00E98B14 /* VideoCell.xib in Resources */,
+				FADC81CA1606788F00F7DCBD /* Icon@2x.png in Resources */,
+				FADC81CD1606789800F7DCBD /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB6A841152E560F00BEAA42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6F425B15307FFA00E98B14 /* VideoCell.m in Sources */,
+				FAB6A86B152E5DCD00BEAA42 /* XMLReader.m in Sources */,
+				FAB6A856152E560F00BEAA42 /* main.m in Sources */,
+				FAB6A85A152E560F00BEAA42 /* AppDelegate.m in Sources */,
+				FAB6A85D152E560F00BEAA42 /* ViewController.m in Sources */,
+				FAB6A868152E5B6800BEAA42 /* FeedLoader.m in Sources */,
+				FA6F42641530A97200E98B14 /* AsyncDownloader.m in Sources */,
+				FA6F42731530E17000E98B14 /* DownloadProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAB6A852152E560F00BEAA42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB6A853152E560F00BEAA42 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB6A85E152E560F00BEAA42 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB6A85F152E560F00BEAA42 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB6A861152E560F00BEAA42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAB6A862152E560F00BEAA42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB6A864152E560F00BEAA42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoDownloader/VideoDownloader-Prefix.pch";
+				INFOPLIST_FILE = "VideoDownloader/VideoDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAB6A865152E560F00BEAA42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoDownloader/VideoDownloader-Prefix.pch";
+				INFOPLIST_FILE = "VideoDownloader/VideoDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB6A83F152E560E00BEAA42 /* Build configuration list for PBXProject "VideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB6A861152E560F00BEAA42 /* Debug */,
+				FAB6A862152E560F00BEAA42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB6A863152E560F00BEAA42 /* Build configuration list for PBXNativeTarget "VideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB6A864152E560F00BEAA42 /* Debug */,
+				FAB6A865152E560F00BEAA42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB6A83C152E560E00BEAA42 /* Project object */;
+}

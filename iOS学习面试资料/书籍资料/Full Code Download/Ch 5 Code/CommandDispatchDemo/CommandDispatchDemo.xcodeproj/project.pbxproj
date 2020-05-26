@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0A15FB141BDD03009F0E11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A15FA141BDD03009F0E11 /* UIKit.framework */; };
+		FA0A15FD141BDD03009F0E11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A15FC141BDD03009F0E11 /* Foundation.framework */; };
+		FA0A15FF141BDD03009F0E11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A15FE141BDD03009F0E11 /* CoreGraphics.framework */; };
+		FA0A1605141BDD03009F0E11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0A1603141BDD03009F0E11 /* InfoPlist.strings */; };
+		FA0A1607141BDD03009F0E11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A1606141BDD03009F0E11 /* main.m */; };
+		FA0A160B141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A160A141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.m */; };
+		FA0A160E141BDD03009F0E11 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A160C141BDD03009F0E11 /* MainWindow.xib */; };
+		FA0A1611141BDD03009F0E11 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A1610141BDD03009F0E11 /* RootViewController.m */; };
+		FA0A1614141BDD03009F0E11 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A1612141BDD03009F0E11 /* RootViewController.xib */; };
+		FA0A1623141BDE68009F0E11 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A161B141BDE68009F0E11 /* InterstitialViewController.m */; };
+		FA0A1624141BDE68009F0E11 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A161D141BDE68009F0E11 /* LoginViewController.m */; };
+		FA0A1625141BDE68009F0E11 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A161E141BDE68009F0E11 /* LoginViewController.xib */; };
+		FA0A1626141BDE68009F0E11 /* NetworkErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A1620141BDE68009F0E11 /* NetworkErrorViewController.m */; };
+		FA0A1627141BDE68009F0E11 /* NetworkErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A1621141BDE68009F0E11 /* NetworkErrorViewController.xib */; };
+		FA0A1628141BDE68009F0E11 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0A1622141BDE68009F0E11 /* wifi.png */; };
+		FA0A163A141BDE75009F0E11 /* BaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A162B141BDE75009F0E11 /* BaseCommand.m */; };
+		FA0A163E141BDE75009F0E11 /* LoginCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A1638141BDE75009F0E11 /* LoginCommand.m */; };
+		FA0A1670141BE92C009F0E11 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A166F141BE92C009F0E11 /* XMLReader.m */; };
+		FA0A1673141BF446009F0E11 /* GetFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A1672141BF446009F0E11 /* GetFeed.m */; };
+		FA0D17D314F47F780074720A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA0D17D214F47F780074720A /* Readme.txt */; };
+		FA719892142B84E00024A0D9 /* YouTubeVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA719891142B84E00024A0D9 /* YouTubeVideoCell.m */; };
+		FA719899142B86480024A0D9 /* YouTubeVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA719898142B86480024A0D9 /* YouTubeVideoCell.xib */; };
+		FA71989C142B9D250024A0D9 /* LoadImageCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71989B142B9D250024A0D9 /* LoadImageCommand.m */; };
+		FA7198A0142BCE240024A0D9 /* filenotfound.png in Resources */ = {isa = PBXBuildFile; fileRef = FA71989F142BCE240024A0D9 /* filenotfound.png */; };
+		FADC81D31606798400F7DCBD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADC81D21606798400F7DCBD /* Icon@2x.png */; };
+		FADC81D61606798A00F7DCBD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FADC81D51606798A00F7DCBD /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA0A15F6141BDD03009F0E11 /* CommandDispatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandDispatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0A15FA141BDD03009F0E11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA0A15FC141BDD03009F0E11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA0A15FE141BDD03009F0E11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA0A1602141BDD03009F0E11 /* CommandDispatchDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CommandDispatchDemo-Info.plist"; sourceTree = "<group>"; };
+		FA0A1604141BDD03009F0E11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA0A1606141BDD03009F0E11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA0A1608141BDD03009F0E11 /* CommandDispatchDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommandDispatchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		FA0A1609141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandDispatchDemoAppDelegate.h; sourceTree = "<group>"; };
+		FA0A160A141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CommandDispatchDemoAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA0A160D141BDD03009F0E11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FA0A160F141BDD03009F0E11 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FA0A1610141BDD03009F0E11 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FA0A1613141BDD03009F0E11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		FA0A161A141BDE68009F0E11 /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		FA0A161B141BDE68009F0E11 /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		FA0A161C141BDE68009F0E11 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FA0A161D141BDE68009F0E11 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FA0A161E141BDE68009F0E11 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FA0A161F141BDE68009F0E11 /* NetworkErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkErrorViewController.h; sourceTree = "<group>"; };
+		FA0A1620141BDE68009F0E11 /* NetworkErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkErrorViewController.m; sourceTree = "<group>"; };
+		FA0A1621141BDE68009F0E11 /* NetworkErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorViewController.xib; sourceTree = "<group>"; };
+		FA0A1622141BDE68009F0E11 /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
+		FA0A162A141BDE75009F0E11 /* BaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BaseCommand.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA0A162B141BDE75009F0E11 /* BaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BaseCommand.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FA0A1637141BDE75009F0E11 /* LoginCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCommand.h; sourceTree = "<group>"; };
+		FA0A1638141BDE75009F0E11 /* LoginCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCommand.m; sourceTree = "<group>"; };
+		FA0A166E141BE92C009F0E11 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		FA0A166F141BE92C009F0E11 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		FA0A1671141BF445009F0E11 /* GetFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GetFeed.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA0A1672141BF446009F0E11 /* GetFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetFeed.m; sourceTree = "<group>"; };
+		FA0D17D214F47F780074720A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		FA719890142B84E00024A0D9 /* YouTubeVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeVideoCell.h; sourceTree = "<group>"; };
+		FA719891142B84E00024A0D9 /* YouTubeVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideoCell.m; sourceTree = "<group>"; };
+		FA719898142B86480024A0D9 /* YouTubeVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeVideoCell.xib; sourceTree = "<group>"; };
+		FA71989A142B9D250024A0D9 /* LoadImageCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadImageCommand.h; sourceTree = "<group>"; };
+		FA71989B142B9D250024A0D9 /* LoadImageCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadImageCommand.m; sourceTree = "<group>"; };
+		FA71989F142BCE240024A0D9 /* filenotfound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filenotfound.png; sourceTree = "<group>"; };
+		FADC81D21606798400F7DCBD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FADC81D51606798A00F7DCBD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0A15F3141BDD03009F0E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A15FB141BDD03009F0E11 /* UIKit.framework in Frameworks */,
+				FA0A15FD141BDD03009F0E11 /* Foundation.framework in Frameworks */,
+				FA0A15FF141BDD03009F0E11 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0A15EB141BDD03009F0E11 = {
+			isa = PBXGroup;
+			children = (
+				FADC81D51606798A00F7DCBD /* Icon.png */,
+				FADC81D21606798400F7DCBD /* Icon@2x.png */,
+				FA0A1600141BDD03009F0E11 /* CommandDispatchDemo */,
+				FA0A15F9141BDD03009F0E11 /* Frameworks */,
+				FA0A15F7141BDD03009F0E11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0A15F7141BDD03009F0E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A15F6141BDD03009F0E11 /* CommandDispatchDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0A15F9141BDD03009F0E11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A15FA141BDD03009F0E11 /* UIKit.framework */,
+				FA0A15FC141BDD03009F0E11 /* Foundation.framework */,
+				FA0A15FE141BDD03009F0E11 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0A1600141BDD03009F0E11 /* CommandDispatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA0D17D214F47F780074720A /* Readme.txt */,
+				FA0A1629141BDE75009F0E11 /* commands */,
+				FA930274142E3E5A00A7B533 /* listeners */,
+				FA28E2FC155ECDD8007C06D0 /* ViewControllers */,
+				FA0A1609141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.h */,
+				FA0A160A141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.m */,
+				FA0A1601141BDD03009F0E11 /* Supporting Files */,
+			);
+			path = CommandDispatchDemo;
+			sourceTree = "<group>";
+		};
+		FA0A1601141BDD03009F0E11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A1622141BDE68009F0E11 /* wifi.png */,
+				FA71989F142BCE240024A0D9 /* filenotfound.png */,
+				FA0A1602141BDD03009F0E11 /* CommandDispatchDemo-Info.plist */,
+				FA0A1603141BDD03009F0E11 /* InfoPlist.strings */,
+				FA0A1606141BDD03009F0E11 /* main.m */,
+				FA0A1608141BDD03009F0E11 /* CommandDispatchDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA0A1629141BDE75009F0E11 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A166E141BE92C009F0E11 /* XMLReader.h */,
+				FA0A166F141BE92C009F0E11 /* XMLReader.m */,
+				FA0A162A141BDE75009F0E11 /* BaseCommand.h */,
+				FA0A162B141BDE75009F0E11 /* BaseCommand.m */,
+				FA0A1637141BDE75009F0E11 /* LoginCommand.h */,
+				FA0A1638141BDE75009F0E11 /* LoginCommand.m */,
+				FA0A1671141BF445009F0E11 /* GetFeed.h */,
+				FA0A1672141BF446009F0E11 /* GetFeed.m */,
+				FA71989A142B9D250024A0D9 /* LoadImageCommand.h */,
+				FA71989B142B9D250024A0D9 /* LoadImageCommand.m */,
+			);
+			name = commands;
+			path = "service-interface";
+			sourceTree = "<group>";
+		};
+		FA28E2FC155ECDD8007C06D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A160C141BDD03009F0E11 /* MainWindow.xib */,
+				FA0A160F141BDD03009F0E11 /* RootViewController.h */,
+				FA0A1610141BDD03009F0E11 /* RootViewController.m */,
+				FA0A1612141BDD03009F0E11 /* RootViewController.xib */,
+				FA719890142B84E00024A0D9 /* YouTubeVideoCell.h */,
+				FA719891142B84E00024A0D9 /* YouTubeVideoCell.m */,
+				FA719898142B86480024A0D9 /* YouTubeVideoCell.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA930274142E3E5A00A7B533 /* listeners */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A161F141BDE68009F0E11 /* NetworkErrorViewController.h */,
+				FA0A1620141BDE68009F0E11 /* NetworkErrorViewController.m */,
+				FA0A1621141BDE68009F0E11 /* NetworkErrorViewController.xib */,
+				FA0A161C141BDE68009F0E11 /* LoginViewController.h */,
+				FA0A161D141BDE68009F0E11 /* LoginViewController.m */,
+				FA0A161E141BDE68009F0E11 /* LoginViewController.xib */,
+				FA0A161A141BDE68009F0E11 /* InterstitialViewController.h */,
+				FA0A161B141BDE68009F0E11 /* InterstitialViewController.m */,
+			);
+			name = listeners;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA0A15F5141BDD03009F0E11 /* CommandDispatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0A1617141BDD03009F0E11 /* Build configuration list for PBXNativeTarget "CommandDispatchDemo" */;
+			buildPhases = (
+				FA0A15F2141BDD03009F0E11 /* Sources */,
+				FA0A15F3141BDD03009F0E11 /* Frameworks */,
+				FA0A15F4141BDD03009F0E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandDispatchDemo;
+			productName = CommandDispatchDemo;
+			productReference = FA0A15F6141BDD03009F0E11 /* CommandDispatchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0A15ED141BDD03009F0E11 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FA0A15F0141BDD03009F0E11 /* Build configuration list for PBXProject "CommandDispatchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA0A15EB141BDD03009F0E11;
+			productRefGroup = FA0A15F7141BDD03009F0E11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0A15F5141BDD03009F0E11 /* CommandDispatchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0A15F4141BDD03009F0E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A1605141BDD03009F0E11 /* InfoPlist.strings in Resources */,
+				FA0A160E141BDD03009F0E11 /* MainWindow.xib in Resources */,
+				FA0A1614141BDD03009F0E11 /* RootViewController.xib in Resources */,
+				FA0A1625141BDE68009F0E11 /* LoginViewController.xib in Resources */,
+				FA0A1627141BDE68009F0E11 /* NetworkErrorViewController.xib in Resources */,
+				FA0A1628141BDE68009F0E11 /* wifi.png in Resources */,
+				FA719899142B86480024A0D9 /* YouTubeVideoCell.xib in Resources */,
+				FA7198A0142BCE240024A0D9 /* filenotfound.png in Resources */,
+				FA0D17D314F47F780074720A /* Readme.txt in Resources */,
+				FADC81D31606798400F7DCBD /* Icon@2x.png in Resources */,
+				FADC81D61606798A00F7DCBD /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0A15F2141BDD03009F0E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A1607141BDD03009F0E11 /* main.m in Sources */,
+				FA0A160B141BDD03009F0E11 /* CommandDispatchDemoAppDelegate.m in Sources */,
+				FA0A1611141BDD03009F0E11 /* RootViewController.m in Sources */,
+				FA0A1623141BDE68009F0E11 /* InterstitialViewController.m in Sources */,
+				FA0A1624141BDE68009F0E11 /* LoginViewController.m in Sources */,
+				FA0A1626141BDE68009F0E11 /* NetworkErrorViewController.m in Sources */,
+				FA0A163A141BDE75009F0E11 /* BaseCommand.m in Sources */,
+				FA0A163E141BDE75009F0E11 /* LoginCommand.m in Sources */,
+				FA0A1670141BE92C009F0E11 /* XMLReader.m in Sources */,
+				FA0A1673141BF446009F0E11 /* GetFeed.m in Sources */,
+				FA719892142B84E00024A0D9 /* YouTubeVideoCell.m in Sources */,
+				FA71989C142B9D250024A0D9 /* LoadImageCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA0A1603141BDD03009F0E11 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA0A1604141BDD03009F0E11 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA0A160C141BDD03009F0E11 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA0A160D141BDD03009F0E11 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FA0A1612141BDD03009F0E11 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA0A1613141BDD03009F0E11 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA0A1615141BDD03009F0E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA0A1616141BDD03009F0E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA0A1618141BDD03009F0E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandDispatchDemo/CommandDispatchDemo-Prefix.pch";
+				INFOPLIST_FILE = "CommandDispatchDemo/CommandDispatchDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CommandDispatchDemo/service-interface\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA0A1619141BDD03009F0E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandDispatchDemo/CommandDispatchDemo-Prefix.pch";
+				INFOPLIST_FILE = "CommandDispatchDemo/CommandDispatchDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CommandDispatchDemo/service-interface\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0A15F0141BDD03009F0E11 /* Build configuration list for PBXProject "CommandDispatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0A1615141BDD03009F0E11 /* Debug */,
+				FA0A1616141BDD03009F0E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0A1617141BDD03009F0E11 /* Build configuration list for PBXNativeTarget "CommandDispatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0A1618141BDD03009F0E11 /* Debug */,
+				FA0A1619141BDD03009F0E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0A15ED141BDD03009F0E11 /* Project object */;
+}
