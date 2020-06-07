@@ -1,6 +1,14 @@
 # 深入了解iOS中的OOM(低内存崩溃)
 
+原文：https://blog.csdn.net/TuGeLe/article/details/104004692
+
+
+
+
+
 在iOS开发过程或者用户反馈中，可能会经常看到这样的情况，用着用着就崩溃了，而在后台查看崩溃栈的时候，找不到崩溃日志。其实这大多数的可能是系统产生了低内存崩溃，也就是OOM(还有一种可能是主线程卡死，导致watchdog杀掉了应用)，而低内存崩溃的日志，往往都是以JetsamEvent开头的，日志中有内存页大小(pageSize)，CPU时间(cpuTime)等字段。
+
+
 
 ## 什么是OOM？
 什么是OOM呢，它是out-of-memory的缩写，字面意思就是内存超过了限制。它是由于 iOS 的 Jetsam机制造成的一种“另类” Crash，它不同于常规的Crash，通过Signal捕获等Crash监控方案无法捕获到OOM事件。
@@ -349,7 +357,10 @@ typedef struct memstat_bucket {
 } memstat_bucket_t;
 ```
 memstat_bucket_t memstat_bucket[MEMSTAT_BUCKET_COUNT];//优先级队列(里面包含不同优先级的结构)
-```
+
+https://opensource.apple.com/source/xnu/xnu-4570.31.3/bsd/sys/kern_memorystatus.h.auto.html
+
+```c
 在kern_memorystatus.h中，我们可以找到JETSAM_PRIORITY_MAX值以及进程优先级相关的定义：
 #define JETSAM_PRIORITY_REVISION                  2
 
